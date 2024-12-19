@@ -10,8 +10,21 @@ autoinstall:
      install-server: yes
      allow-pw: yes
   packages:
-    - python3
-    - libsfml-dev
+    # Building
+    - build-essential
+    - curl
+    - wget
     - git
+    - g++
+    - cmake
+    - python3
+    # editors
+    - vim
+    - emacs
+    # progamming utils
     - valgrind
+    - gdb
+    # project libs
+    - libsfml-dev
   late-commands:
+    - "wget https://gist.githubusercontent.com/emersonmx/31004a311efb2876d187/raw/eb2b18c543e945c55a592cebe3c0e4dc3d90e299/sfml_hello.cpp -O /home/student/sfml_hello.cpp"
