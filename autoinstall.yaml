@@ -1,0 +1,17 @@
+#cloud-config
+autoinstall:
+  version: 1
+  identity:
+     hostname: cop3504-devenv
+     username: student
+     # pw is "cop3504"
+     password: "$6$WZWb89FGmaHFeT05$KR0/bcDC9mMfDm4E0x2ulrfIO9aD5gmVIAXnwH.3FcvnCcwOysL1.EwEPzHmeUfJKD3ibvEMhbjgjnmut5VQk/"
+  ssh:
+     install-server: yes
+     allow-pw: yes
+  packages:
+    - python3
+    - libsfml-dev
+    - git
+    - valgrind
+  late-commands:
