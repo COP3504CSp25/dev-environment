@@ -31,6 +31,7 @@ autoinstall:
     # project libs
     - libsfml-dev
   late-commands:
-    - wget -O /target/postinstall.sh https://raw.githubusercontent.com/0ntu/cop3504-devenv/refs/heads/master/postinstall.sh
-    - curtin in-target -- bash /postinstall.sh
-    - rm /target/postinstall.sh
+    - wget -O /target/root/postinstall.sh https://raw.githubusercontent.com/0ntu/cop3504-devenv/refs/heads/master/postinstall.sh
+    - curtin in-target -- chmod +x /root/postinstall.sh
+    - curtin in-target -- bash /root/postinstall.sh
+    - rm /target/root/postinstall.sh
