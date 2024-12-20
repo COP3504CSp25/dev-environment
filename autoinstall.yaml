@@ -12,7 +12,9 @@ autoinstall:
      install-server: yes
      allow-pw: yes
   packages:
-    # Building
+    # virt
+    - virtualbox-guest-x11
+    # build tools
     - build-essential
     - curl
     - wget
@@ -29,3 +31,6 @@ autoinstall:
     # project libs
     - libsfml-dev
   late-commands:
+    - wget -O /target/postinstall.sh https://raw.githubusercontent.com/0ntu/cop3504-devenv/refs/heads/master/postinstall.sh
+    - curtin in-target -- bash /postinstall.sh
+    - rm /target/postinstall.sh
