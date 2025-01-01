@@ -58,7 +58,45 @@ The highlighted portion is your IP address and is unique to your virtual machine
    Hint: You may also want a terminal for more control over the environment, Open a terminal with `` Ctrl+Shift+` ``
 
 ### Jetbrains: Pycharm & CLion
-**UNDER CONSTRUCTION**
+
+**Initial setup**
+1. Create a new project on your local system, or open an existing one that you'd like to upload to the VM.
+![Creating a CLion Project](https://github.com/user-attachments/assets/57a7abf2-74c6-4f92-bb23-fd9fd9036560)
+
+2. Open settings with `Ctrl+Alt+S` and navigate to File -> Build, Execution, Deployment -> Toolchains.
+![image](https://github.com/user-attachments/assets/80516f99-802c-4500-8d6c-363485829fa5)
+
+3. Click the plus in the top-left corner and click "Remote Host"
+![image](https://github.com/user-attachments/assets/2e8b77d9-6f49-4115-b871-471adff2c699)
+
+4. Click the gear next to credentials and enter
+
+    - the developement environment's IP address in the host box
+    - "22" in the port box
+    - "student" in the Username box
+    - Authentication type: Password
+    - cop3504 in the password box. Check the "save password" option to avoid needing to type this in repeatedly when working
+
+5. Test your connection.
+![image](https://github.com/user-attachments/assets/f0a5eb02-8ec5-4df4-82f4-52f68ddf85de)
+
+**For future projects, only the following steps need to be done each project.**
+
+6. Navigate to Settings -> Build, Execution, Deployment -> Deployment, click the plus, and add a new SFTP configuration. Give it the same name as your current project.
+![image](https://github.com/user-attachments/assets/3dc5ce8a-46f7-4619-83c7-7640073186a7)
+
+7. Check the "Visible only for this project" box and click the dropdown for SSH configuration. Select the configuration that was made in step 4, which should be called "student@<IP_ADDRESS>".
+![image](https://github.com/user-attachments/assets/2a0bfc2a-bf14-4128-846e-6ae8364382e8)
+
+8. Click the "Mappings" tab on the top of the window. In the deployment path box, click the folder. Navigate to the folder on the virtual machine where your files are housed.
+  - If you don't have a project folder on the virtual machine yet, open a terminal on it and create a directory in which you'd like your files to be housed with the `mkdir` command. You may also use the GUI to create a directory by clicking on the folder icon on the left side of the screen, navigating to the appropriate folder, right-clicking, and creating a new folder.
+  - ![image](https://github.com/user-attachments/assets/4c12f8db-1744-4132-bfc1-1280fda752ad)
+
+9. **CLion Only.** Navigate to Build, Execution, Deployment -> CMake in settings and create a new profile. Change the Toolchain to be Remote Host. Leave everything else default.
+![image](https://github.com/user-attachments/assets/d0a3b1d9-956b-45f9-9eda-f460e55c8614)
+
+10. Build and run the project with `Shift+F10` or via the run button.
+![image](https://github.com/user-attachments/assets/e3c5f7f6-dea6-4f81-a9d9-a10f5a8f0201)
 
 ### Other IDEs
 Any other IDEs that support remote development via SSH should work. However, you will have to read their specific documentation for setup. Feel free to use any tooling that suits you!
