@@ -96,7 +96,8 @@ The highlighted portion is your IP address and is unique to your virtual machine
 ![image](https://github.com/user-attachments/assets/d0a3b1d9-956b-45f9-9eda-f460e55c8614)
 
 10. Build and run the project with `Shift+F10` or via the run button.
-![image](https://github.com/user-attachments/assets/e3c5f7f6-dea6-4f81-a9d9-a10f5a8f0201)
+![image](https://github.com/user-attachments/assets/cddbf4de-8c52-476d-a1e0-334f92922606)
+
 
 ### Other IDEs
 Any other IDEs that support remote development via SSH should work. However, you will have to read their specific documentation for setup. Feel free to use any tooling that suits you!
