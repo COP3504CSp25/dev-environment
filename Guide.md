@@ -13,7 +13,7 @@ Developing on the provided development environment is *optional*, but it's highl
 ![Untitled](https://github.com/user-attachments/assets/fde5cb3c-7321-4bbc-ab33-5ef9b8057a7d)
 
 
-2. Download the [Development Environment](https://www.example.com)
+2. Download the [Development Environment](https://uflorida-my.sharepoint.com/personal/npadriga_ufl_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fnpadriga%5Fufl%5Fedu%2FDocuments%2FClass%2FCOP3504%2DDev%2FCOP3504%2DDevEnv%2Eova&parent=%2Fpersonal%2Fnpadriga%5Fufl%5Fedu%2FDocuments%2FClass%2FCOP3504%2DDev&ga=1)
 3. In the tab bar, under "File", click "**Import Appliance**"
 ![Pasted image 20241226020505](https://github.com/user-attachments/assets/5274443e-bea8-42de-9fa7-20b11123963a)
 
