@@ -136,6 +136,3 @@ Credentials for the development environment:
 Command-line projects can be tested and ran directly from your IDE or from within the virtual machine.
 
 Graphical projects **must** be run from within the virtual machine. 
-
-#### Testing Code inside the Virtual Machine
-**UNDER CONSTRUCTION**
