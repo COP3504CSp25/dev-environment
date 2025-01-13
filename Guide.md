@@ -73,42 +73,55 @@ The is your virtual environment's local IP address and is unique to your machine
 
 **Initial setup**
 1. Create a new project on your local system, or open an existing one that you'd like to upload to the VM.
-![Creating a CLion Project](https://github.com/user-attachments/assets/57a7abf2-74c6-4f92-bb23-fd9fd9036560)
 
-2. Open settings with `Ctrl+Alt+S` and navigate to File -> Build, Execution, Deployment -> Toolchains.
-![image](https://github.com/user-attachments/assets/80516f99-802c-4500-8d6c-363485829fa5)
+![image](https://github.com/user-attachments/assets/e9abdd60-5fae-48b7-ba0f-593584719c3c)
+
+2. Open settings with `Ctrl+Alt+S` and navigate to `Build, Execution, Deployment` -> `Toolchains`.
+
+![image](https://github.com/user-attachments/assets/07cfe502-eff3-4336-a639-b61a986b5f62)
 
 3. Click the plus in the top-left corner and click "Remote Host"
-![image](https://github.com/user-attachments/assets/2e8b77d9-6f49-4115-b871-471adff2c699)
 
-4. Click the gear next to credentials and enter
+![image](https://github.com/user-attachments/assets/7f0f1c64-7bab-4f80-903f-3bc93df49af6)
 
-    - the developement environment's IP address in the host box
+
+4. **Click the Gear next to Credentials** and click the plus. Enter the following information:
+
+    - The Development Environment's IP address in the host box
     - "22" in the port box
-    - "student" in the Username box
+    - Username: `student`
     - Authentication type: Password
-    - cop3504 in the password box. Check the "save password" option to avoid needing to type this in repeatedly when working
+    - Password: `cop3504`. Check the "save password" option to avoid needing to type this in repeatedly when working
 
-5. Test your connection.
-![image](https://github.com/user-attachments/assets/f0a5eb02-8ec5-4df4-82f4-52f68ddf85de)
+![image](https://github.com/user-attachments/assets/a87f95f7-899e-45e0-8d13-5dfb3c79f680)
+
+5. Click Test your connection.
+
+![image](https://github.com/user-attachments/assets/77e1237c-566c-42dd-b147-a6256cad60cc)
 
 **For future projects, only the following steps need to be done each project.**
 
-6. Navigate to Settings -> Build, Execution, Deployment -> Deployment, click the plus, and add a new SFTP configuration. Give it the same name as your current project.
-![image](https://github.com/user-attachments/assets/3dc5ce8a-46f7-4619-83c7-7640073186a7)
+6. Open settings with `Ctrl+Alt+S` and navigate to Execution, Deployment -> Deployment, click the plus, and add a new SFTP configuration. Give it the same name as your current project.
+![image](https://github.com/user-attachments/assets/a5f5383b-07ca-49bc-b24d-90997d00bb36)
 
-7. Check the "Visible only for this project" box and click the dropdown for SSH configuration. Select the configuration that was made in step 4, which should be called "student@<IP_ADDRESS>".
-![image](https://github.com/user-attachments/assets/2a0bfc2a-bf14-4128-846e-6ae8364382e8)
+7. Ensure the "Visible only for this project" box and click the dropdown for SSH configuration. Select the configuration that was made in step 4, which should be called "student@<IP_ADDRESS>".
+
+![image](https://github.com/user-attachments/assets/1005b14b-9381-4b89-8f76-0916cd513309)
 
 8. Click the "Mappings" tab on the top of the window. In the deployment path box, click the folder. Navigate to the folder on the virtual machine where your files are housed.
   - If you don't have a project folder on the virtual machine yet, open a terminal on it and create a directory in which you'd like your files to be housed with the `mkdir` command. You may also use the GUI to create a directory by clicking on the folder icon on the left side of the screen, navigating to the appropriate folder, right-clicking, and creating a new folder.
-  - ![image](https://github.com/user-attachments/assets/4c12f8db-1744-4132-bfc1-1280fda752ad)
+
+![image](https://github.com/user-attachments/assets/2079003e-c764-4682-b6c5-9d43ae98eae2)
+
+![image](https://github.com/user-attachments/assets/b3b1ac63-2037-4ea5-b2a9-ac3fdffb47f3)
+
 
 9. **CLion Only.** Navigate to Build, Execution, Deployment -> CMake in settings and create a new profile. Change the Toolchain to be Remote Host. Leave everything else default.
-![image](https://github.com/user-attachments/assets/d0a3b1d9-956b-45f9-9eda-f460e55c8614)
+![image](https://github.com/user-attachments/assets/cac1580f-ee8d-4757-9262-15e94d61a4a5)
+
 
 10. Build and run the project with `Shift+F10` or via the run button.
-![image](https://github.com/user-attachments/assets/cddbf4de-8c52-476d-a1e0-334f92922606)
+![image](https://github.com/user-attachments/assets/859db330-5c44-4ad4-8593-52b5881cc1b9)
 
 
 ### Other IDEs
