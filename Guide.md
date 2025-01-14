@@ -119,8 +119,11 @@ The is your virtual environment's local IP address and is unique to your machine
 9. **CLion Only.** Navigate to Build, Execution, Deployment -> CMake in settings and create a new profile. Change the Toolchain to be Remote Host. Leave everything else default.
 ![image](https://github.com/user-attachments/assets/cac1580f-ee8d-4757-9262-15e94d61a4a5)
 
+10. If you get a CMake error that states that you need a higher version of CMake, open your project's CMakeLists.txt and change the version to be 3.28.
 
-10. Build and run the project with `Shift+F10` or via the run button.
+11. Restart CLion and the development environment.
+
+12. Build and run the project with `Shift+F10` or via the run button.
 ![image](https://github.com/user-attachments/assets/859db330-5c44-4ad4-8593-52b5881cc1b9)
 
 
