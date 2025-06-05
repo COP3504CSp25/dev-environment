@@ -1,11 +1,11 @@
 # COP3504C Development Environment Guide
 > "it works on my machine"
 ## Overview
-A development environment provides a preconfigured toolset used to compile, run, and debug a project. This course has you create a number of projects that depend on other libraries (code written by other people). To avoid manual installation and guarantee all required libraries are installed, we provide our own development environment in the form of a **Virtual Machine** that contains all the tools you need to complete the assignments in this course.
+A development environment provides a preconfigured toolset used to compile, run, and debug a project. This course has you create a number of projects that depend on other libraries (code written by other people). To avoid manual installation and guarantee all required libraries are installed, we provide our own development environment in the form of a **Virtual Machine** that contains all the tools you need to complete the assignments in this course. While this is not the preferred method (a WSL2 running Ubuntu or Debian is recommended) if you have problems with that method, this guide is provided as an alternative.
 
 Developing on the provided development environment is *optional*, but it's highly recommended that you <u>at least test your code with it prior to submitting on Gradescope</u>. The environment we use to test and grade your submission will be the exact same, so if your code works correctly on the VM, it should work on our end too.
 
-*If you choose to develop on your own machine (without the environment), ensure you have the following installed: `g++`, `python3`, `SFML`. Be aware that course staff cannot guarantee support for dependency errors if you choose to go down this route.*
+*If you choose to develop on your own machine (without the environment), ensure you have the following installed: `g++`, `python3`, `SFML,` `valgrind`, `make`, and `gdb`. Be aware that course staff cannot guarantee support for dependency errors if you choose to go down this route.*
 
 ## Installation
 
