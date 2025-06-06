@@ -37,11 +37,11 @@ While it's not strictly required, for this course, we recommend the use of an op
 - Install MSYS2 from the link: https://msys2.github.io/
 - Click on MSYS2 UCRT64 in your Start menu
 - Run the following commands:
- - `pacman -S mingw-w64-x86_64-gsl`
- - `pacman -S mingw-w64-x86_64-cmake`
- - `pacman -S mingw-w64-x86_64-gcc`
- - `pacman -S mingw-w64-x86_64-sfml`
- - `pacman -S mingw-w64-x86_64-make`
+   - `pacman -S mingw-w64-x86_64-gsl`
+   - `pacman -S mingw-w64-x86_64-cmake`
+   - `pacman -S mingw-w64-x86_64-gcc`
+   - `pacman -S mingw-w64-x86_64-sfml`
+   - `pacman -S mingw-w64-x86_64-make`
 - Add MSYS2 to your environment variables.
   - Open the start menu and search for "Edit the system environment variables".
   - In the window that opens, click "Environment Variables".
