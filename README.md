@@ -50,7 +50,7 @@ While it's not strictly required, for this course, we recommend the use of an op
   - Type in the path that `mingw64/bin/` directory is located into the box. I recommend moving the `msys64/` directory to your `C:/` directory, so the recommended path is `C:\msys64\mingw64\bin`
   - Click OK thrice to exit all three environment variable windows.
   - Restart your machine.
-- Your should be all set to copmlete the Hello World assignment on your local machine.
+- Your should be all set to complete the Hello World assignment on your local machine.
 
 ## Troubleshooting
 - If you run into problems, let the course staff know so that this section can be updated accordingly. If you can't get it working for whatever reason, you also have the VirtualBox and MSYS2 routes to take. VirtualBox is harder to set up and eats up a lot of hard disk space, but is nearly guaranteed to work. MSYS2 will probably work now without much trouble and is decently small, but could cause problems later on in the course. Choose accordingly.
